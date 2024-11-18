@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-}
-
 /* COMMON */
 body {
     background-image: url(https://wallpaperaccess.com/full/1567665.png);
@@ -20,9 +16,7 @@ body {
 .container {
     width: 90%;
     max-width: 1100px;
-    margin: 100px auto;
-
-
+    margin: 100px auto 0;
 }
 
 .small-container {
@@ -35,7 +29,9 @@ body {
     display: none;
 }
 
-.block {display: block;}
+.block {
+    display: block;
+}
 
 .center {
     text-align: center;
@@ -54,9 +50,9 @@ a {
 .row {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 70%;
     margin: 20px auto 30px;
-    gap: 20px 10px;
+    gap: 20px 15px;
 
 }
 
@@ -81,14 +77,38 @@ button {
 }
 
 .col-6 {
-    width: calc((100% - 10px)/ 2);
+    width: calc((100% - 30px)/ 2);
+    font-size: 18px;
 }
 
-p span {
+span {
     margin: 10px 0;
 }
 
 span.center {
-    margin: 10px 0;
     font-size: 30px;
+}
+
+.brd {
+    margin: auto;
+    width: 60%;
+    border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .col-6 {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .row {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .col-6 {
+        text-align: start;
+    }
 }
