@@ -9,9 +9,19 @@
 .container {
     width: 90%;
     max-width: 1100px;
+    margin: 0 auto;
 
     /* DEBUG */
     border: 1px solid black;
+    min-height: 200px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* LAYOUT */
