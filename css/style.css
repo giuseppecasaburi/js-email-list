@@ -5,15 +5,40 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 /* COMMON */
+body {
+    background-image: url(https://wallpaperaccess.com/full/1567665.png);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #bcd6df;
+}
+
 .container {
     width: 90%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 100px auto;
 
-    /* DEBUG */
-    border: 1px solid black;
-    min-height: 200px;
+
+}
+
+.small-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {display: block;}
+
+.center {
+    text-align: center;
 }
 
 li {
@@ -22,6 +47,48 @@ li {
 
 a {
     text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 20px auto 30px;
+    gap: 20px 10px;
+
 }
 
 /* LAYOUT */
+
+#title {
+    margin: 15px 0 25px;
+    font-size: 45px;
+}
+
+.text {
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+button {
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: rgb(116, 106, 220);
+    color: white;
+}
+
+.col-6 {
+    width: calc((100% - 10px)/ 2);
+}
+
+p span {
+    margin: 10px 0;
+}
+
+span.center {
+    margin: 10px 0;
+    font-size: 30px;
+}
